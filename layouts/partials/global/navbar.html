@@ -1,21 +1,69 @@
-<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-dark; cls-inactive: uk-navbar-transparent; top: 200">
-    <nav class="uk-navbar-container">
-        <div class="uk-container uk-container-expand">
-            <div uk-navbar>
-                <div class="uk-navbar-left">
-                    <h1 class="uk-text-bold uk-text-large uk-margin-remove"><span class="uk-dim">Landscaping <span class="accent">Tecpoyotl Inc.</span></span></h1>
-
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav uk-text-bold">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div>
-
-            </div>
+<div class="top-navbar">
+    <nav uk-navbar style="background:#EECECE">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Item</a></li>
+            </ul>
         </div>
     </nav>
 </div>
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="#">
+            <img src="/uploads/corydeglogo.jpg" alt="">
+        </a>
+    </div>
+</nav>
+<nav class="uk-navbar-container" uk-navbar style="border-top:1px solid #ccc;margin-top:20px">
+    <div class="uk-container">
+        <div class="uk-navbar-center">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li>
+                    <a href="#">Parent</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Item</a></li>
+            </ul>
+    
+        </div>
+    </div>
+</nav>

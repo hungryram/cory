@@ -4,12 +4,17 @@ p {
     line-height: 1.7;
 }
 
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: 'Forum', cursive;
+}
+
 /* OVERWRITE */
 
-div.uk-card-default {
-    background: #6CB00B;
-    border-radius: 8px;
-}
 
 .uk-white {
     color: #fff;
@@ -32,8 +37,7 @@ a.uk-button.uk-button-secondary {
 }
 
 a.uk-button.uk-button-primary {
-    background: #6CB00B;
-    border-radius: 50px;
+    background: #E3A6AE;
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -43,7 +47,7 @@ a:hover {
 }
 
 .accent {
-    color: #6CB00B
+    color: #f7b5a2;
 }
 
 .uk-padding-xlarge {
@@ -52,32 +56,37 @@ a:hover {
 
 /* NAVBAR */
 
-ul.uk-navbar-nav>li>a {
-    color: #b5b5b5;
+nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #fff;
+}
+
+div.top-navbar ul.uk-navbar-nav>li>a {
+    min-height: 40px;
 }
 
 /* HERO */
 
-div.hero-form {
-    background: white;
-    border-radius: 8 px;
+div.hero-inner {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 30px;
+
 }
 
-input.uk-input {
-    background-color: #eee;
-    border-radius: 50px;
+div.hero-inner h1 {
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid #EECECE;
+    padding: 20px;
+    font-size: 3rem;
+
 }
 
-textarea.uk-textarea {
-    background-color: #eee;
-    border-radius: 15px;
-}
+/* SECTION 1 */
 
-button.uk-button {
-    border-radius: 50px;
-    background: #6CB00B;
-    transition: .3s;
-    padding: 8px;
+img.flower {
+    position: absolute;
+    left: 0;
+    width: 170px;
+    transform: rotate(45deg);
 }
 
 /* FOOTER */
